@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".explorefeature.PollutionDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/toolbar_elevation"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_m"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/city_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            tools:text="@string/city_name" />
+
+        <TextView
+            android:id="@+id/state_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            tools:text="@string/state_name" />
+
+        <TextView
+            android:id="@+id/country_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            tools:text="@string/country_name" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pollution_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        card_view:contentPadding="@dimen/card_padding"
+        card_view:cardCornerRadius="@dimen/card_corner"
+        card_view:cardElevation="@dimen/card_elevation"
+        android:layout_margin="@dimen/margin_m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/image_dimen_m"
+                android:layout_height="@dimen/image_dimen_m"
+                android:layout_margin="@dimen/margin_m"
+                android:src="@drawable/pollution_icon_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pollution_aqi"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="75 US AQI"/>
+
+                <TextView
+                    android:id="@+id/pollution_title"
+                    android:textSize="@dimen/text_size_large"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="MODERATE"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/weather_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        card_view:contentPadding="@dimen/card_padding"
+        card_view:cardCornerRadius="@dimen/card_corner"
+        card_view:cardElevation="@dimen/card_elevation"
+        card_view:cardBackgroundColor="@color/off_white"
+        android:layout_margin="@dimen/margin_m">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="@dimen/image_dimen_m"
+                android:layout_height="@dimen/image_dimen_m"
+                android:layout_margin="@dimen/margin_m"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/temperature"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/weather_icon"
+                tools:text="Temperature 20 °C"/>
+
+            <TextView
+                android:id="@+id/humidity"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/temperature"
+                app:layout_constraintLeft_toRightOf="@+id/weather_icon"
+                tools:text="Humidity 47 %"/>
+
+            <TextView
+                android:id="@+id/wind"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/humidity"
+                app:layout_constraintLeft_toRightOf="@+id/weather_icon"
+                tools:text="Wind Speed 12 m/s"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

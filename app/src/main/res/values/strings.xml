@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AirPollution</string>
+
+    <string name="error_title_generic">Something went wrong</string>
+    <string name="error_message_generic">Please try again</string>
+
+    <string name="error_title_region">This is region is not supported</string>
+    <string name="error_message_region">Please try another area</string>
+
+    <string name="phone_error_title">No internet connection detected</string>
+    <string name="phone_error_message">Please ensure your phone has an active internet connection and try again.</string>
+
+    <string name="city_name">City: %1$s</string>
+    <string name="state_name">State: %1$s</string>
+    <string name="country_name">Country: %1$s</string>
+    <string name="city_us_aqi">%1$d US AQI</string>
+    <string name="city_temperature">Temperature %1$d °C</string>
+    <string name="city_humidity">Humidity %1$d %%</string>
+    <string name="city_wind">Wind Speed %1$d m/s</string>
+
+    <!--Pollution Level titles-->
+    <string name="pollution_good">GOOD</string>
+    <string name="pollution_moderate">MODERATE</string>
+    <string name="pollution_unhealthy_for_sensitive">UNHEALTHY FOR SENSITIVE</string>
+    <string name="pollution_unhealthy">UNHEALTHY</string>
+    <string name="pollution_very_unhealthy">VERY UNHEALTHY</string>
+    <string name="pollution_hazardous">HAZARDOUS</string>
+    <string name="pollution_undefined">UNDEFINED</string>
+
+    <string name="dialog_ok">OK</string>
+</resources>
