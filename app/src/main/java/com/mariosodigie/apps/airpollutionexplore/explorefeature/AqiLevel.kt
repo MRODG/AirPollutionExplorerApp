@@ -1,6 +1,5 @@
 package com.mariosodigie.apps.airpollutionexplore.explorefeature
 
-import androidx.annotation.DrawableRes
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 import com.mariosodigie.apps.airpollutionexplore.R

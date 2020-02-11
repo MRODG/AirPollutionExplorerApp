@@ -14,13 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".explorefeature.PollutionDetailsActivity"></activity>
+        <activity
+            android:name=".explorefeature.PollutionDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".explorefeature.ExplorerActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
