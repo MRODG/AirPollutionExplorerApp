@@ -23,7 +23,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "EXPLORE_BASE_URL", '"https://api.airvisual.com/v2/"')
-        buildConfigField("String", "EXPLORE_API_KEY", '"f26c7525-fd80-471d-a291-23f8e9f9d42f"')
+        buildConfigField("String", "EXPLORE_API_KEY", '"99cad0d6-0b10-42e2-a155-9080177ecf27"')
 
     }
     buildTypes {
