@@ -1,4 +1,17 @@
-package com.mariosodigie.apps.airpollutionexplore.explorefeature.model
+package com.mariosodigie.apps.airpollutionexplore.data.dto
+import com.squareup.moshi.Json
+class PollutionInfoDto {
+}
+
+
+
+data class PollutionInfoDto(
+    @field:Json(name = "city") val symbol: String?,
+    @field:Json(name = "Description") val description: String?,
+    @field:Json(name = "Name") val name: String?,
+    @field:Json(name = "Country") val country: String?,
+    @field:Json(name = "Industry") val industry: String?,
+)
 
 data class Weather(val temperature: Int,
                    val humidity: Int,
