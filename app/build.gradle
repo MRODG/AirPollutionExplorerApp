@@ -5,6 +5,7 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id 'kotlin-allopen'
     id 'org.jetbrains.kotlin.android.extensions'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 allOpen {
