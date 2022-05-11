@@ -4,8 +4,11 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.os.Build
 import androidx.annotation.RequiresApi
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class ConnectivityCheck(private val context: Context) {
+@Singleton
+class ConnectivityCheck @Inject constructor(private val context: Context) {
     @RequiresApi(Build.VERSION_CODES.M)
     @Suppress("DEPRECATION")
     fun isConnectedToNetwork(): Boolean {

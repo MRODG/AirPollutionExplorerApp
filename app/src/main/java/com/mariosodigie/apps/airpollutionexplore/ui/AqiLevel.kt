@@ -1,4 +1,4 @@
-package com.mariosodigie.apps.airpollutionexplore.explorefeature
+package com.mariosodigie.apps.airpollutionexplore.ui
 
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
